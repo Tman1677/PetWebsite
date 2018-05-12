@@ -1,5 +1,10 @@
 .logo {
   margin-top: 0px;
+  height: 46px;
+  padding: 0px;
+}
+.nav-button {
+  margin-top: 0px;
   height: 40px;
   padding: 0px;
 }

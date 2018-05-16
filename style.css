@@ -1,0 +1,10 @@
+.logo {
+  height: 40px;
+}
+
+#navbarSupportedContent > ul > li > a > img {
+  height: 30px;
+}
+.navbar {
+  margin-bottom: 0
+}

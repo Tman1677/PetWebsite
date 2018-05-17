@@ -1,10 +1,18 @@
 .logo {
   margin-top: 0px;
-  height: 46px;
+  height: 66px;
   padding: 0px;
 }
 .nav-button {
   margin-top: 0px;
   height: 60px;
   padding: 0px;
+}
+
+@media (min-width: 768px){
+  .main, .sidebar-r, .sidebar-l {
+    top: 0;
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+  }
 }

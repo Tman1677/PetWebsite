@@ -16,3 +16,17 @@
     overflow-y: auto;
   }
 }
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.floater {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 99999;
+    color: #FFF;
+}

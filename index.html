@@ -81,11 +81,13 @@ function MM_DW_effectPulsate(obj,method,effect,mode,times,speed)
           </ul>
           <br>
           <br>
+          <!--
           <h6 style="text-align:center">
             <a href="other.html">
               Other Requirements
             </a>
           </h6>
+        -->
         </div>
         <div id="main" class="col-12 col-md-9 col-xl-10 py-3  pl-md-3 border-left main">
           <h1 id="text" style="text-indent: 50px;">Welcome to our Pet Website</h1>
@@ -100,13 +102,17 @@ function MM_DW_effectPulsate(obj,method,effect,mode,times,speed)
                 </p>
 
               </div>
+              <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('rat1','','images/homeImages/HappyDog.jpg',1)">
                 <img src="images/homeImages/HappyDog.jpg" alt="" class="img-fluid" id="dog1" onClick="MM_DW_effectPuff($(this),'hide','puff',150,1000)">
+              </a>
                 <img src="images/homeImages/3D_Chinchilla2.jpg" alt="" class="img-fluid" id="chinchilla1" onClick="MM_DW_effectBounce($(this),'effect','bounce','up',20,'hide',5,1000)">
             </div>
 
 
             <div class="col-12 col-xl-6 py-3  pl-md-3">
-          <img src="images/homeImages/How-To-Get-Rid-Of-Rats.jpg" alt="" class="img-fluid" id="rat1" onClick="MM_DW_effectClip($(this),'hide','clip','vertical',1000)">
+          <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('dog1','','images/homeImages/How-To-Get-Rid-Of-Rats.jpg',1)">
+            <img src="images/homeImages/How-To-Get-Rid-Of-Rats.jpg" alt="" class="img-fluid" id="rat1" onClick="MM_DW_effectClip($(this),'hide','clip','vertical',1000)">
+          </a>
           <img src="images/homeImages/not-finished.png" alt="" class="img-fluid" id="fish1" onClick="MM_DW_effectSlide($(this),'show','slide','left',20,1000)">
           <img src="images/homeImages/waardenburg-syndrome-in-ferrets-5371fce614cc9.jpg" alt="" class="img-fluid" id="ferret1" onClick="MM_DW_effectPulsate($(this),'effect','pulsate','show',5,1000)">
             </div>

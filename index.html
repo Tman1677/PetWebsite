@@ -9,6 +9,30 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Pet Website</title>
+  <script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+  <script src="jQueryAssets/jquery-ui-effects.custom.min.js"></script>
+  <script type="text/javascript">
+function MM_DW_effectPuff(obj,method,effect,percent,speed)
+{
+    obj[method](effect, { percent:percent}, speed);
+}
+function MM_DW_effectBounce(obj,method,effect,direction,distance,mode,times,speed)
+{
+    obj[method](effect, { direction:direction,distance:distance,mode:mode,times:times}, speed);
+}
+function MM_DW_effectClip(obj,method,effect,dir,speed)
+{
+    obj[method](effect, { direction: dir}, speed);
+}
+function MM_DW_effectSlide(obj,method,effect,direction,distance,speed)
+{
+    obj[method](effect, { direction: direction, distance: distance}, speed);
+}
+function MM_DW_effectPulsate(obj,method,effect,mode,times,speed)
+{
+    obj[method](effect, { mode: mode,times:times}, speed);
+}
+  </script>
   </head>
   <body class="bg-secondary" onLoad="MM_preloadImages('buttons/doggo2.png','buttons/chinchilla2.png','buttons/ferret2.png','buttons/fish2.png','buttons/pawprint2.png','buttons/gerbil2.png')">
     <header>
@@ -76,15 +100,15 @@
                 </p>
 
               </div>
-                <img src="images/homeImages/HappyDog.jpg" alt="" id="dog1" class="img-fluid">
-                <img src="images/homeImages/3D_Chinchilla2.jpg" alt="" id="chinchilla1" class="img-fluid">
+                <img src="images/homeImages/HappyDog.jpg" alt="" class="img-fluid" id="dog1" onClick="MM_DW_effectPuff($(this),'hide','puff',150,1000)">
+                <img src="images/homeImages/3D_Chinchilla2.jpg" alt="" class="img-fluid" id="chinchilla1" onClick="MM_DW_effectBounce($(this),'effect','bounce','up',20,'hide',5,1000)">
             </div>
 
 
             <div class="col-12 col-xl-6 py-3  pl-md-3">
-          <img src="images/homeImages/How-To-Get-Rid-Of-Rats.jpg" alt="" id="rat1" class="img-fluid">
-          <img src="images/homeImages/not-finished.png" alt="" id="fish1" class="img-fluid">
-          <img src="images/homeImages/waardenburg-syndrome-in-ferrets-5371fce614cc9.jpg" id="ferret1" alt="" class="img-fluid">
+          <img src="images/homeImages/How-To-Get-Rid-Of-Rats.jpg" alt="" class="img-fluid" id="rat1" onClick="MM_DW_effectClip($(this),'hide','clip','vertical',1000)">
+          <img src="images/homeImages/not-finished.png" alt="" class="img-fluid" id="fish1" onClick="MM_DW_effectSlide($(this),'show','slide','left',20,1000)">
+          <img src="images/homeImages/waardenburg-syndrome-in-ferrets-5371fce614cc9.jpg" alt="" class="img-fluid" id="ferret1" onClick="MM_DW_effectPulsate($(this),'effect','pulsate','show',5,1000)">
             </div>
           </div>
         </div>
@@ -93,7 +117,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery.min.js"></script>
+    <!--<script src="js/jquery.min.js"></script>-->
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/custom.js"></script>

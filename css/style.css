@@ -24,9 +24,12 @@
 }
 
 .floater {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: 99999;
-    color: #FFF;
+    position: relative;
+    z-index: 1;
+    color: #FFF ;
 }
+.floating_image {
+	width: 100%;
+	height: auto;
+}
+
